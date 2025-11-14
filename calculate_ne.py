@@ -2,7 +2,7 @@
 """
 Created on Thu Nov 12 23:09:00 2025
 
-@author: finni
+@author: Liangyu Lu
 """
 
 import argparse
@@ -39,4 +39,5 @@ def main():
     print(f"Final Ne ratios: {Ne_ratios}")
 
 if __name__ == '__main__':
+
     main()
