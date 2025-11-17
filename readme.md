@@ -8,7 +8,7 @@ A phylogenetically informed framework for estimating effective population size (
 ```bash
 pip install ne-ratio-calculator
 
-git clone https://github.com/Ne-ratio/Ne_retio.git
+git clone https://github.com/Ne-ratio/Ne_ratio.git
 cd Ne_retio.git
 pip install -e 
 
@@ -38,3 +38,4 @@ Lu, L., Dai, W., Pan, Y., & Yan, Z. (in preparation). A Divergence-Calibrated Fr
 
 # Contact
 For questions, please contact Zheng Yan (yanz@lzu.edu.cn).
+
