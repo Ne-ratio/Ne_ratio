@@ -26,7 +26,7 @@ scaffold1   1        N/N       T/T       T|C
 
 Missing data is denoted as `N`, and phased and unphased genotypes are shown conventionally with `|` and `/`.
 
-The script `parseVCF.py` in the [`VCF_processing`](https://github.com/simonhmartin/genomics_general/tree/master/VCF_processing) directory, will convert vcf to this format. It has various options for filtering based on read depth, genotype quality or any other flag in the `FORMAT` column of the vcf.
+The script `parseVCF.py` in the [`VCF_processing`](https://github.com/Ne-ratio/Ne_ratio/tree/main/VCF_processing) directory, will convert vcf to this format. It has various options for filtering based on read depth, genotype quality or any other flag in the `FORMAT` column of the vcf.
 
 #### Example command
 
@@ -34,7 +34,7 @@ The script `parseVCF.py` in the [`VCF_processing`](https://github.com/simonhmart
 python VCF_processing/parseVCF.py -i input.vcf.gz --skipIndels --minQual 30 --gtf flag=DP min=5 max=50 -o output.geno.gz
 ```
 
-You can read more about this script in the [`VCF_processing`](https://github.com/simonhmartin/genomics_general/tree/master/VCF_processing) directory.
+You can read more about this script in the [`VCF_processing`](https://github.com/Ne-ratio/Ne_ratio/tree/main/VCF_processing) directory.
 
 ---
 
@@ -131,6 +131,7 @@ Lu, L., Dai, W., Pan, Y., & Yan, Z. (in preparation). A Divergence-Calibrated Fr
 
 # Contact
 For questions, please contact Zheng Yan (yanz@lzu.edu.cn).
+
 
 
 
