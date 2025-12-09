@@ -13,8 +13,8 @@ Most of my scripts use a processed `.vcf` format that I call `.geno`. This looks
 
 ```
 #CHOM      POS      ind1      ind2      ind3
-scaffold1  1        A/A       A/G       G|A
-scaffold1  1        N/N       T/T       T|C
+chr1       1        A/A       A/G       G|A
+chr1       1        N/N       T/T       T|C
 ```
 
 Missing data is denoted as `N`, and phased and unphased genotypes are shown conventionally with `|` and `/`.
