@@ -3,7 +3,7 @@
 A phylogenetically informed framework for estimating effective population size (*Nₑ*) ratios across genomic compartments.
 ## Features
 - Calculate nucleotide diversity (π) from VCF files- Estimate sequence divergence (D) using outgroups- Compute *Nₑ* ratios for autosomes, X, Y, and mitochondrial DNA- Phylogenetic calibration for mutation rate variation- Support for multiple species and populations
-- All samples (e.g., human, bonobo, chimp) need to be mapped to the outgroup genome and call SNP in order to calculate divergence.
+- **All samples (e.g., human, bonobo, chimp) need to be mapped to the outgroup genome and call SNP in order to calculate divergence.**
 ## Installation and dependencies
 
 There is no system installation required. Just download this entire repository using the green "Code" button at the top of this page, or with the bash command `git clone https://github.com/Ne-ratio/Ne_ratio.git`. If you prefer to move scripts to the directory where you run them, bear in mind that many of these scripts require the script `genomics.py` to be present in the same directory (or on your PYTHONPATH). The easiest is just to leave them in the main directory and specify the full path to the script when running it from elsewhere.
@@ -131,6 +131,7 @@ Lu, L., Dai, W., Pan, Y., & Yan, Z. (in preparation). A Divergence-Calibrated Fr
 
 # Contact
 For questions, please contact Zheng Yan (yanz@lzu.edu.cn).
+
 
 
 
