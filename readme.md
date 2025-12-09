@@ -1,5 +1,6 @@
 # NE Ratio Calculator
 A phylogenetically informed framework for estimating effective population size (*Nₑ*) ratios across genomic compartments.
+
 ## Features
 - **All samples (e.g., human, bonobo, chimp) need to be mapped to the outgroup genome and call the SNP variants in order to calculate divergence.**
 - Calculate nucleotide diversity (π) from VCF files- Estimate sequence divergence (D) using outgroups- Compute *Nₑ* ratios for autosomes, X, Y, and mitochondrial DNA- Phylogenetic calibration for mutation rate variation- Support for multiple species and populations
@@ -131,6 +132,7 @@ Lu, L., Dai, W., Pan, Y., & Yan, Z. (in preparation). A Divergence-Calibrated Fr
 
 # Contact
 For questions, please contact Zheng Yan (yanz@lzu.edu.cn).
+
 
 
 
