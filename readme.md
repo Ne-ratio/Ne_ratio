@@ -20,8 +20,8 @@ Most of my scripts use a processed `.vcf` format that I call `.geno`. This looks
 
 ```
 #CHROM      POS      ind1      ind2      ind3
-chr1   1        A/A       A/G       G|A
-chr1   1        N/N       T/T       T|C
+chr1         1        A/A       A/G       G|A
+chr1         1        N/N       T/T       T|C
 ```
 
 Missing data is denoted as `N`, and phased and unphased genotypes are shown conventionally with `|` and `/`.
@@ -131,6 +131,7 @@ Lu, L., Dai, W., Pan, Y., & Yan, Z. (in preparation). A Divergence-Calibrated Fr
 
 # Contact
 For questions, please contact Zheng Yan (yanz@lzu.edu.cn).
+
 
 
 
