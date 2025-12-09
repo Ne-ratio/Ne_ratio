@@ -59,7 +59,7 @@ python filterGenotypes.py --threads 4 -i input.geno.gz -o output.geno.gz --minAl
 
 By default, this script assumes that the `.geno` input file is is encoded as diploid genotypes with a phase operator (`/` or `|`):
 ```
-scaffold1  1        A/A       G/G       G|A
+chr1  1        A/A       G/G       G|A
 ``` 
 You can specify a different input formats using the `-if`, but this is not recommended.
 
@@ -131,6 +131,7 @@ Lu, L., Dai, W., Pan, Y., & Yan, Z. (in preparation). A Divergence-Calibrated Fr
 
 # Contact
 For questions, please contact Zheng Yan (yanz@lzu.edu.cn).
+
 
 
 
