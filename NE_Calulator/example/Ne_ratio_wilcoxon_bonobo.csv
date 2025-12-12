@@ -1,0 +1,10 @@
+chr_type,species1,species2,n1,n2,statistic,p_value
+X,Bonobo,Chimpanzee,1587,5686,3950824.000000,0.000000
+X,Bonobo,Human,1587,2461,1857794.000000,0.008865
+X,Chimpanzee,Human,5686,2461,7489413.000000,0.000000
+Y,Bonobo,Chimpanzee,86,150,10514.000000,0.000000
+Y,Bonobo,Human,86,14,821.000000,0.029966
+Y,Chimpanzee,Human,150,14,699.000000,0.039145
+MT,Bonobo,Chimpanzee,2,6,3.000000,0.428571
+MT,Bonobo,Human,2,2,0.000000,0.333333
+MT,Chimpanzee,Human,6,2,3.000000,0.428571
