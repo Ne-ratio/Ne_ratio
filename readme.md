@@ -80,7 +80,7 @@ ___
 
 ## Diversity and divergence analyses in sliding windows
 
-The script `popgenWindows.py` computes some standard population genomic statistics in sliding windows:  *pi*,  *F*<sub>ST</sub> and *D<sub>XY</sub>*. It requires the script `genomics.py` to be present in the same directory, or in your Python path.
+The script `popgenWindows.py` computes some standard population genomic statistics in sliding windows:  *pi* and *D<sub>XY</sub>*. It requires the script `genomics.py` to be present in the same directory, or in your Python path.
 
 #### Example command
 ```bash
@@ -137,6 +137,7 @@ Lu, L., Dai, W., Pan, Y., & Yan, Z. (in preparation). A Divergence-Calibrated Fr
 
 ## Contact
 For questions, please contact Zheng Yan (yanz@lzu.edu.cn).
+
 
 
 
