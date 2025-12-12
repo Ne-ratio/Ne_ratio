@@ -107,14 +107,14 @@ Output is a `.csv`. If you add `.gz` it will be gzipped.
 * You can either include sample names after the population name, separated by commas, or provide only the population name, along with a populations file, with the flag `--popsFile `, which has two columns: the first gives sample names and teh second gives population name:
 
 ```
-C1  popC
-C2  popC
-C3  popC
-C4  popC
-D1  popD
-D2  popD
-D3  popD
-D4  popD
+C1  speciesC
+C2  speciesC
+C3  speciesC
+C4  speciesC
+D1  speciesD
+D2  speciesD
+D3  speciesD
+D4  speciesD
 ```
 
 * The most common source of errors here involve the `-m` (`--minSites`) flag. If you are useing coordinate windows and have any sites with missing data, then `-m` must be set to a value smaller than the window size. If you have reduced representation data such as RADseq, you will need a much lower `-m` value (more like 1% of the window size or even less).
@@ -123,7 +123,12 @@ D4  popD
 
 * The script can run on multiple cores (`-T` flag). Try different numbers, as using too many can slow the script down (due to the difficulty in sorting the outputs coming from the different cores).
 
+## Ne ratio calculate
+change the species and gene name when use NE_calculator.py, which can calculate Ne ratio when put sliding_windows.csv in.
+```bash
+python NE_calculator.py
 
+After the computation finishes, it outputs a long-format file ready for plotting in R, along with the Wilcoxon test results. Feed that long-format file into the accompanying R script（Ne_ant.R） to generate the final figure.
 
 # Citation
 Lu, L., Dai, W., Pan, Y., & Yan, Z. (in preparation). A Divergence-Calibrated Framework for Robust Cross-Species Comparison of Effective Population Size Ratios. Manuscript in preparation for Methods in Ecology and Evolution.
@@ -132,6 +137,7 @@ Lu, L., Dai, W., Pan, Y., & Yan, Z. (in preparation). A Divergence-Calibrated Fr
 
 # Contact
 For questions, please contact Zheng Yan (yanz@lzu.edu.cn).
+
 
 
 
