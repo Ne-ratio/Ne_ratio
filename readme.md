@@ -124,7 +124,7 @@ D4  speciesD
 * The script can run on multiple cores (`-T` flag). Try different numbers, as using too many can slow the script down (due to the difficulty in sorting the outputs coming from the different cores).
 
 ## Ne ratio calculate
-change the species and gene name when use NE_calculator.py, which can calculate Ne ratio when put sliding_windows.csv in.
+change the species and gene name when use NE_calculator.py(https://github.com/Ne-ratio/Ne_ratio/blob/main/NE_Calulator/NE_calculator.py), which can calculate Ne ratio when put sliding_windows.csv in.
 ```bash
 python NE_calculator.py
 ```
@@ -137,6 +137,7 @@ Lu, L., Dai, W., Pan, Y., & Yan, Z. (in preparation). A Divergence-Calibrated Fr
 
 ## Contact
 For questions, please contact Zheng Yan (yanz@lzu.edu.cn).
+
 
 
 
