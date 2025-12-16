@@ -132,7 +132,7 @@ python NE_calculator.py  sliding_windows.csv
 
 *`python NE_calculator.py -h` Will print a full list of command arguments.
 
-*After the computation finishes, it outputs a long-format file ready for plotting in R, along with the Wilcoxon test results. Feed that long-format file into the accompanying R script(https://github.com/Ne-ratio/Ne_ratio/tree/main/NE_Calulator/NE_result.R) to generate the final figure.
+*After the computation finishes, it outputs a long-format file ready for plotting in R. Feed that long-format file into the accompanying R script(https://github.com/Ne-ratio/Ne_ratio/tree/main/NE_Calulator/NE_result.R) to generate the final figure.
 
 ## Citation
 Lu, L., Dai, W., Pan, Y., & Yan, Z. (in preparation). A Divergence-Calibrated Framework for Robust Cross-Species Comparison of Effective Population Size Ratios. Manuscript in preparation for Methods in Ecology and Evolution.
@@ -141,6 +141,7 @@ Lu, L., Dai, W., Pan, Y., & Yan, Z. (in preparation). A Divergence-Calibrated Fr
 
 ## Contact
 For questions, please contact Zheng Yan (yanz@lzu.edu.cn).
+
 
 
 
