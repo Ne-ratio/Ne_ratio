@@ -1,0 +1,10 @@
+species,chr_type,ne_ratio,se
+Bonobo,X,0.6536,0.0203
+Bonobo,Y,0.1589,0.0145
+Bonobo,MT,0.2771,0.0365
+Chimpanzee,X,0.6731,0.0275
+Chimpanzee,Y,0.1026,0.0076
+Chimpanzee,MT,0.3292,0.0210
+Human,X,0.6659,0.0265
+Human,Y,0.1608,0.0171
+Human,MT,0.2837,0.0250
