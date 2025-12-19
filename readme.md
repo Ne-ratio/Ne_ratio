@@ -17,7 +17,7 @@ git clone --recurse-submodules https://github.com/Ne-ratio/Ne_ratio.git
 ```
 ***if can not download when the web be anonymized, please use "Download Repository" button in https://anonymous.4open.science/r/Ne_ratio-A425/readme.md**
 
-**download simonhmartin's repository, please use the code below:**
+**To download Simon Martin's repository, please run the following command:**
 ```
 cd Ne_ratio 
 git submodule add https://github.com/simonhmartin/genomics_general.git extern/genomics_general
@@ -154,6 +154,7 @@ The VCF-to-genotype conversion, genotype filtering and sliding-window population
 We include that repository as a read-only git submodule (`extern/genomics_general`) without any modifications.  
 
 A standalone copy of the MIT license for genomics_general is provided in LICENSE.genomics_general.
+
 
 
 
