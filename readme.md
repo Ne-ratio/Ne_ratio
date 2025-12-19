@@ -5,8 +5,19 @@ A phylogenetically informed framework for estimating effective population size (
 - **All samples (e.g., human, bonobo, chimp) need to be mapped to the outgroup genome and call the SNP variants in order to calculate divergence.**
 - Calculate nucleotide diversity (π) from VCF files- Estimate sequence divergence (D) using outgroups- Compute *Nₑ* ratios for autosomes, X, Y, and mitochondrial DNA- Phylogenetic calibration for mutation rate variation- Support for multiple species and populations
 
-## Installation and dependencies
+## Dependencies
 
+### External code (git submodule)
+
+**Processing VCF files**， **Filtering genotype files prior to further analysis**， **Diversity and divergence analyses in sliding windows** requires Simon Martin’s [`genomics_general`](https://github.com/simonhmartin/genomics_general) (MIT Licence).  
+We **do not copy** any source files into our own repository; instead the exact version is imported as a read-only git submodule:
+```bash
+git clone --recurse-submodules https://github.com/YOUR_NAME/YOUR_REPO.git
+# if you already cloned without --recurse-submodules, run:
+git submodule update --init --recursive
+```
+## Installation and dependencies
+ 
 There is no system installation required. Just download this entire repository using the green "Code" button at the top of this page, or with the bash command `git clone https://github.com/Ne-ratio/Ne_ratio.git`. If you prefer to move scripts to the directory where you run them, bear in mind that many of these scripts require the script `genomics.py` to be present in the same directory (or on your PYTHONPATH). The easiest is just to leave them in the main directory and specify the full path to the script when running it from elsewhere.
 
 The two dependencies are [numpy](https://numpy.org/) and [genomic](https://github.com/simonhmartin/genomics_general.git).
@@ -16,7 +27,7 @@ Most of the scripts now run in python 3. Some are still written for python 2, bu
 ___
 
 ## Processing VCF files
-
+(uses parseVCF.py from simonhmartin/genomics_general)
 Most of my scripts use a processed `.vcf` format that I call `.geno`. This looks something like this:
 
 ```
@@ -40,7 +51,7 @@ You can read more about this script in the [`VCF_processing`](https://github.com
 ---
 
 ## Filtering genotype files prior to further analysis
-
+(uses filterGenotypes.py from simonhmartin/genomics_general)
 If you vcf file was not already filtered, or you would like to filter further. The script `filtergenotypes.py` has many options for filtering. Some examples include:
 * Number of individuals with non-missing `N/N` genotypes at a site (`--minCalls`)
 * Number of alleles observed at a site across all individuals (`--minAlleles` and `--maxAlleles`)
@@ -79,7 +90,7 @@ You can also specify various putput formats using `-of`.
 ___
 
 ## Diversity and divergence analyses in sliding windows
-
+(uses popgenWindows.py from simonhmartin/genomics_general)
 The script `popgenWindows.py` computes some standard population genomic statistics in sliding windows:  *pi* and *D<sub>XY</sub>*. It requires the script `genomics.py` to be present in the same directory, or in your Python path.
 
 #### Example command
@@ -133,6 +144,7 @@ python NE_calculator.py  sliding_windows.csv
 *`python NE_calculator.py -h` Will print a full list of command arguments.
 
 *After the computation finishes, it outputs a long-format file ready for plotting in R. Feed that long-format file into the accompanying R script(https://github.com/Ne-ratio/Ne_ratio/tree/main/NE_Calulator/NE_result.R) to generate the final figure.
+
 
 
 
