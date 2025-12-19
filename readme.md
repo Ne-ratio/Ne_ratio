@@ -36,7 +36,7 @@ chr1         1        N/N       T/T       T|C
 
 Missing data is denoted as `N`, and phased and unphased genotypes are shown conventionally with `|` and `/`.
 
-The script `parseVCF.py` in the [`VCF_processing`](https://github.com/Ne-ratio/Ne_ratio/tree/main/VCF_processing) directory, will convert vcf to this format. It has various options for filtering based on read depth, genotype quality or any other flag in the `FORMAT` column of the vcf.
+The script `parseVCF.py` in the [`VCF_processing`](https://github.com/simonhmartin/genomics_general/tree/master/VCF_processing) directory, will convert vcf to this format. It has various options for filtering based on read depth, genotype quality or any other flag in the `FORMAT` column of the vcf.
 
 #### Example command
 
@@ -44,7 +44,7 @@ The script `parseVCF.py` in the [`VCF_processing`](https://github.com/Ne-ratio/N
 python VCF_processing/parseVCF.py -i input.vcf.gz --skipIndels --minQual 30 --gtf flag=DP min=5 max=50 -o output.geno.gz
 ```
 
-You can read more about this script in the [`VCF_processing`](https://github.com/Ne-ratio/Ne_ratio/tree/main/VCF_processing) directory.
+You can read more about this script in the [`VCF_processing`](https://github.com/simonhmartin/genomics_general/tree/master/VCF_processing) directory.
 
 ---
 
@@ -149,6 +149,7 @@ The VCF-to-genotype conversion, genotype filtering and sliding-window population
 We include that repository as a read-only git submodule (`extern/genomics_general`) without any modifications.  
 
 A standalone copy of the MIT license for genomics_general is provided in LICENSE.genomics_general.
+
 
 
 
