@@ -13,6 +13,7 @@ A phylogenetically informed framework for estimating effective population size (
 **Processing VCF files**， **Filtering genotype files prior to further analysis**， **Diversity and divergence analyses in sliding windows** requires Simon Martin’s [`genomics_general`](https://github.com/simonhmartin/genomics_general) (MIT Licence).  
 We **do not copy** any source files into our own repository; instead the exact version is imported as a read-only git submodule:
 ```bash
+git submodule add https://github.com/simonhmartin/genomics_general.git extern/genomics_general
 git clone --recurse-submodules https://github.com/Ne-ratio/Ne_ratio.git
 # if you already cloned without --recurse-submodules, run:
 git submodule update --init --recursive
@@ -147,6 +148,7 @@ python NE_calculator.py  sliding_windows.csv
 
 The VCF-to-genotype conversion, genotype filtering and sliding-window population-genetic analyses described above are performed with scripts written by Simon Martin and distributed under the MIT licence in the repository [simonhmartin/genomics_general](https://github.com/simonhmartin/genomics_general).  
 We include that repository as a read-only git submodule (`extern/genomics_general`) without any modifications.  
+
 
 
 
