@@ -1,12 +1,5 @@
 
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Dec 10 15:34:57 2025
-
-@author: Liangyu Lu
-"""
 import argparse
-
 import os
 import pandas as pd
 import numpy as np
@@ -148,4 +141,5 @@ long_for_r = (
 
 long_for_r.to_csv(r'C:/Users/finni/Desktop/Ne_ratio_long_for_R_hominid.csv',
                   index=False,
+
                   float_format='%.6f')
