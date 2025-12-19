@@ -5,20 +5,18 @@ A phylogenetically informed framework for estimating effective population size (
 - **All samples (e.g., human, bonobo, chimp) need to be mapped to the outgroup genome and call the SNP variants in order to calculate divergence.**
 - Calculate nucleotide diversity (π) from VCF files- Estimate sequence divergence (D) using outgroups- Compute *Nₑ* ratios for autosomes, X, Y, and mitochondrial DNA- Phylogenetic calibration for mutation rate variation- Support for multiple species and populations
 
-## Dependencies
 
-### External code (git submodule)
+
+## Installation and dependencies
+ ### External code (git submodule)
 
 **Processing VCF files**， **Filtering genotype files prior to further analysis**， **Diversity and divergence analyses in sliding windows** requires Simon Martin’s [`genomics_general`](https://github.com/simonhmartin/genomics_general) (MIT Licence).  
 We **do not copy** any source files into our own repository; instead the exact version is imported as a read-only git submodule:
 ```bash
-git clone --recurse-submodules https://github.com/YOUR_NAME/YOUR_REPO.git
+git clone --recurse-submodules https://github.com/[YOUR_NAME/YOUR_REPO.git](https://github.com/Ne-ratio/Ne_ratio.git)
 # if you already cloned without --recurse-submodules, run:
 git submodule update --init --recursive
 ```
-## Installation and dependencies
- 
-There is no system installation required. Just download this entire repository using the green "Code" button at the top of this page, or with the bash command `git clone https://github.com/Ne-ratio/Ne_ratio.git`. If you prefer to move scripts to the directory where you run them, bear in mind that many of these scripts require the script `genomics.py` to be present in the same directory (or on your PYTHONPATH). The easiest is just to leave them in the main directory and specify the full path to the script when running it from elsewhere.
 
 The two dependencies are [numpy](https://numpy.org/) and [genomic](https://github.com/simonhmartin/genomics_general.git).
 
@@ -144,6 +142,7 @@ python NE_calculator.py  sliding_windows.csv
 *`python NE_calculator.py -h` Will print a full list of command arguments.
 
 *After the computation finishes, it outputs a long-format file ready for plotting in R. Feed that long-format file into the accompanying R script(https://github.com/Ne-ratio/Ne_ratio/tree/main/NE_Calulator/NE_result.R) to generate the final figure.
+
 
 
 
