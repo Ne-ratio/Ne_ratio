@@ -14,8 +14,8 @@ A phylogenetically informed framework for estimating effective population size (
 We **do not copy** any source files into our own repository; instead the exact version is imported as a read-only git submodule:
 ```bash
 git clone --recurse-submodules https://github.com/Ne-ratio/Ne_ratio.git
-# if you already cloned without --recurse-submodules, run:
-git submodule update --init --recursive
+cd Ne_ratio 
+git submodule add https://github.com/simonhmartin/genomics_general.git extern/genomics_general
 ```
 
 The two dependencies are [numpy](https://numpy.org/) and [genomic](https://github.com/simonhmartin/genomics_general.git).
@@ -149,6 +149,7 @@ The VCF-to-genotype conversion, genotype filtering and sliding-window population
 We include that repository as a read-only git submodule (`extern/genomics_general`) without any modifications.  
 
 A standalone copy of the MIT license for genomics_general is provided in LICENSE.genomics_general.
+
 
 
 
