@@ -25,7 +25,7 @@ git submodule add https://github.com/simonhmartin/genomics_general.git extern/ge
 
 The two dependencies are [numpy](https://numpy.org/) and [genomic](https://github.com/simonhmartin/genomics_general.git).
 
-Most of the scripts now run in python 3. Some are still written for python 2, but those will be updated soon.
+Most of the scripts now run in python 3. 
 
 ___
 
@@ -154,6 +154,7 @@ The VCF-to-genotype conversion, genotype filtering and sliding-window population
 We include that repository as a read-only git submodule (`extern/genomics_general`) without any modifications.  
 
 A standalone copy of the MIT license for genomics_general is provided in LICENSE.genomics_general.
+
 
 
 
